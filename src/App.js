@@ -4,26 +4,13 @@ import mParticle from '@mparticle/web-sdk';
 import clevertap from './clevertap-wrapper'
 import { useEffect } from 'react';
 
-// mParticle.init('us1-d6f4fe26d664924ab97c87f951cc5ea8', {
-//   isDevelopmentMode: false,
-//   identifyRequest: {
-//     userIdentities: {
-//       email: 'test1abc@example.com',
-//       customerid: '7890abc',
-//     },
-//   },
-//   forwardWebRequestsServerSide: false
-//   }
-// )
-
-
 const mparticleConfig = mParticle.MPConfiguration = {
   isDevelopmentMode: false,
   loglevel: 'verbose',
   identifyRequest: {
     userIdentities: {
-      email: 'test1abc@example.com',
-      customerid: '7890abc',
+      email: 'sonam.abcds@clevertap.com',
+      customerid: 'qwerey123e3',
     },
   },
   forwardWebRequestsServerSide: false,
@@ -56,11 +43,15 @@ const mparticleConfig = mParticle.MPConfiguration = {
 }
 
 function App() {
+
   useEffect(() => {
     mParticle.init('us1-d6f4fe26d664924ab97c87f951cc5ea8', mparticleConfig)
   }, [])
+  // const initMpart = function () {
+    
+  // }
 
-  mParticle.logEvent('React Web Test', mParticle.EventType.Navigation, {
+  mParticle.logEvent('React Web Test Another', mParticle.EventType.Navigation, {
     movie_length: '127 minutes',
     rating: 'PG',
   });
@@ -72,6 +63,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        {/* <button onClick={initMpart}>Init SDK</button> */}
 
         <a
           className="App-link"
