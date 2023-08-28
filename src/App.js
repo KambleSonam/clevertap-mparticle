@@ -51,7 +51,7 @@ function App() {
     
   // }
 
-  mParticle.logEvent('React Web Test Another', mParticle.EventType.Navigation, {
+  mParticle.logEvent('React Web Test', mParticle.EventType.Navigation, {
     movie_length: '127 minutes',
     rating: 'PG',
   });
