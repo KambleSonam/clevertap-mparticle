@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@clevertap/clevertap-mparticle-web-kit": "^1.0.3",
-    "@mparticle/web-sdk": "2.23.2",
+    "@mparticle/web-sdk": "2.23.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
